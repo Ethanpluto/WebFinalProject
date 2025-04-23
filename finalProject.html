@@ -4,7 +4,7 @@
         <title>WEB-115 Final Project</title>
     </head>
     <body>
-        <form action="projectJS.js">
+        <form id="form">
             <label for="breakfast">Breakfast</label>
             <select name="breakfast" id="breakfast">
                 <option value="Eggs and toast">Eggs and toast</option>
@@ -40,11 +40,15 @@
                 <option value="BBQ">BBQ</option>
                 <option value="Fried Fish"></option>
             </select><br>
-            <input type="text" value="Name"><br>
-            <input type="text" value="Email"><br>
-            <input type="text" value="goal"><br>
-            <input type="submit" value="Submit">
-            <input type="button" value="Clear">
+            <label for="name">Name</label><br>
+            <input type="text" value="" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" value="" id="email" required><br>
+            <label for="goal">Goal</label><br>
+            <input type="text" value="" id="goal"><br>
+            <input type="submit" value="Submit" id="submit-bt">
+            <input type="reset" value="Reset">
         </form>
+        <script src="projectJS.js"></script>
     </body>
 </html
