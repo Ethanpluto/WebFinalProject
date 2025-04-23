@@ -18,5 +18,13 @@ document.getElementById("form").addEventListener("submit",function(event){
     flyWindow.document.write(myText);
 });
 
+function validateEmail() {
+    let email = document.getElementById('email').value;
+    let regex = /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!regex.test(email)) {
+        alert('Invalid email format!');
+    }
+}
+
 // function submit_meal(){
 // }
